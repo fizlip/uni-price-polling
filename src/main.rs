@@ -63,7 +63,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>>{
         (eth2_f64 / usdt_f64));
 
     
-    println!("[UNI V2] LINK/USDT: ${token_per_usdt}");
+    println!("[UNI V2] TOKEN/USDT: ${token_per_usdt}");
 
     Ok(())
 
