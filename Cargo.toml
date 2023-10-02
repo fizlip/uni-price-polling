@@ -1,0 +1,14 @@
+[package]
+name = "uni-price-polling"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = {version = "2.0", features = ["rustls", "ws"]}
+# Ethers' async features rely upon the Tokio async runtime.
+tokio = { version = "1", features = ["full"] }
+# Flexible concrete Error Reporting type built on std::error::Error with customizable Reports
+eyre = "0.6"
+clap = { version = "4.2.5", features = ["derive"] }
